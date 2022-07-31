@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Task(models.Model):
-    title = models.CharField('Название', max_length=15)
+    title = models.CharField('Название', max_length=30)
     task = models.TextField('Описание')
 
     def __str__(self):
